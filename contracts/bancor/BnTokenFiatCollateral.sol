@@ -47,7 +47,8 @@ contract BnTokenFiatCollateral is AppreciatingFiatCollateral {
     /// Claim rewards earned by holding a balance of the ERC20 token
     /// @dev delegatecall
     function claimRewards() external virtual override(Asset, IRewardable) {
-        uint256[] memory ids = new uint256[](programId);
+        uint256[] memory ids = new uint256[](0);
+        ids[0] = programId;
         ProgramData[] memory data = rewards.programs(ids);
         IERC20 token = IERC20(data[0].rewardsToken);
         uint256 amount = rewards.claimRewards(ids);
