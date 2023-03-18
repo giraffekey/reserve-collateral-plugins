@@ -9,7 +9,7 @@ import "./IPool.sol";
  * @notice Collateral plugin for a Stargate LP token of unpegged collateral, such as ETH.
  * Expected: {tok} != {ref}, {ref} == {target}, {target} != {UoA}
  */
-contract BnTokenSelfReferentialCollateral is AppreciatingFiatCollateral {
+contract StargateTokenSelfReferentialCollateral is AppreciatingFiatCollateral {
     using OracleLib for AggregatorV3Interface;
     using FixLib for uint192;
 

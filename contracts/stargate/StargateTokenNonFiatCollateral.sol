@@ -8,7 +8,7 @@ import "./StargateTokenFiatCollateral.sol";
 /**
  * @title StargateTokenNonFiatCollateral
  * @notice Collateral plugin for a Stargate LP token of non-fiat collateral that requires default checks,
- * like WBTC. Expected: {tok} != {ref}, {ref} == {target}, {target} != {UoA}
+ * like wBTC. Expected: {tok} != {ref}, {ref} == {target}, {target} != {UoA}
  */
 contract StargateTokenNonFiatCollateral is StargateTokenFiatCollateral {
     using FixLib for uint192;
