@@ -23,3 +23,9 @@ Supports fiat, nonfiat and unpegged collateral.
 Maple Finance pools accrue automatically by increasing the exchange rate of pool tokens to underlying tokens. The Pool contract includes a `totalAssets` function that returns the amount of underlying tokens in the pool and a `totalSupply` function that returns the amount of pool tokens in circulation.
 
 Supports fiat, nonfiat and unpegged collateral.
+
+### Opyn
+
+Opyn strategies accrue automatically by increasing the exchange rate of pool tokens to underlying tokens. The StrategyBase contract includes a `getVaultDetails` function that returns the amount of underlying tokens in collateral and a `totalSupply` function that returns the amount of pool tokens in circulation. The LeverageZen contract includes a `calcWethToWithdraw` contract that can convert pool tokens to underlying tokens.
+
+Supports Crab and Zen Bull strategies.
